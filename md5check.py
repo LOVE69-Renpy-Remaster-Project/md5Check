@@ -1,6 +1,6 @@
 # md5 Check By Luckykeeper
 # 计算下载文件是否完整
-# 日期：2022年4月28日
+# 日期：2022年4月29日
 
 import ctypes,hashlib,os,re,msvcrt
 from rich.console import Console
@@ -63,7 +63,7 @@ def show_files(path, all_files):
 ctypes.windll.kernel32.SetConsoleTitleW("LOVE69 下载 MD5 校验工具 for ver1.0 \"LuckyCocoa\" By Luckykeeper , Build20220428")
 
 console.print("[blue]_________________________________________________________[/blue]")
-console.print ("LOVE69 下载 MD5 校验工具 for ver1.0 \"LuckyCocoa\" By Luckykeeper , Build20220428")
+console.print ("LOVE69 下载 MD5 校验工具 for ver1.0 \"LuckyCocoa\" By Luckykeeper , Build20220429")
 console.print("[blue]_________________________________________________________[/blue]")
 console.print("""[green]
 
@@ -205,7 +205,7 @@ for content in contents:
             
             console.print("[blue]_________________________________________________________[/blue]")
             console.print("[green]发现 armx86_64 1.0版文件："+content+"，开始计算 MD5 值，请稍等~[/green]")
-            print("armx86_64 1.0版的 MD5 为：",lv69_ver10_armv8_release_md5)
+            print("armx86_64 1.0版的 MD5 为：",lv69_ver10_armx86_64_Md5_release_md5)
             down_armx86_64_Md5 = CheckMD5('./'+str(content))
             print("您下载文件的 MD5 值是：",down_armx86_64_Md5)
             if down_armx86_64_Md5 == lv69_ver10_armx86_64_Md5_release_md5:
